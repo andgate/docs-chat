@@ -1,0 +1,5 @@
+.env
+.mypy_cache
+docs_chat.egg-info
+__pycache__
+flagged
