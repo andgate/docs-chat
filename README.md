@@ -26,9 +26,18 @@ Also, don't forget to install this package locally so that importing works corre
 pip install -e .
 ```
 
-#  Running Server
+#  Running Servers
+
+First, [setup a local qdrant instance.](https://qdrant.tech/documentation/quick_start/)
 
 To run the chat server:
 ```
-uvicorn server.server:app --reload
+invoke start-server
 ```
+
+To run the frontend
+```
+invoke start-frontend
+```
+
+Enjoy!

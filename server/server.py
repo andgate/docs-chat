@@ -1,11 +1,14 @@
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from langchain import LLMChain, PromptTemplate
+from qdrant_client import QdrantClient
 
 from server.models import ChatRequest, ChatResponse
 from utils.mosaic import MosaicML
 
 load_dotenv()
+
+vdb_client = QdrantClient(":memory:")
 
 # Load the language model
 llm = MosaicML(max_new_tokens=200).setup()

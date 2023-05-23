@@ -20,4 +20,4 @@ accelerate
 fastapi
 uvicorn
 requests
-types-requests
+qdrant-client
